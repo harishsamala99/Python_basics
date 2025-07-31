@@ -3,7 +3,7 @@ a1="jazmyn"
 print(f"{a} its the time to take {a1} out and propose her")
 
 #or
-template="hey {} can have this {}$ money"
+template="hey {} you can have this {}$ money"
 a="harish"
 a1=1000
 s=template.format(a,a1)
