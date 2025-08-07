@@ -1,20 +1,7 @@
-class Animal():
-    Location="India"
-    
-    def __init__(self, name,age):
-        self.name=name
-        self.age=age
-        
-    def animal(self):
-        return f"it is a {self.name} and its age is {self.age}"
-    
-class tiger(Animal):
-    def speaks(self):
-        return "roarrrr"
+fib=[0,1]
+n=10
+for i in range(n-2):
+    fib.append(fib[-1]+fib[-2])
+print(','.join(str(e) for e in fib))
 
-t=tiger("tiger", 5)
 
-print(t.name)
-print(t.animal())
-print(t.Location)
-print(t.speaks())
