@@ -9,7 +9,7 @@ vowel=['a','e','i','o','u']
 words= "harish"
 count=0 # it checks how many words are in vowel
 for character in words:
-    if character in vowel: #checks if there any character in vowels
+    if character in vowel: #checks if there any character in vowels. And just mentioning "not" it checks how many words are not in vowel.
         count+=1 #increases the count whenever a vowel is found.
 print(count)
     

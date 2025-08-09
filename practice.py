@@ -1,7 +1,15 @@
-fib=[0,1]
-n=10
-for i in range(n-2):
-    fib.append(fib[-1]+fib[-2])
-print(','.join(str(e) for e in fib))
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Cannot divide by zero")
+    return a / b
 
-
+try:
+    a = int(input("Enter the numerator: "))
+    b = int(input("Enter the denominator: "))
+    result = divide(a, b)
+except ValueError as e:
+    print("Error:", e)
+else:
+    print(f"The result is {result}")
+finally:
+    print("Done")
